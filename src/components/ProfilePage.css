@@ -1,0 +1,46 @@
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .profile-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+  }
+  
+  .profile-picture img {
+    width: 50%;
+    height: 50%;
+    
+  }
+  
+  .profile-info {
+    flex: 1;
+  }
+  
+  .profile-info h2{
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .profile-info p {
+    font-size: 20px;
+    margin: 5px 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+  }
+  
+  /* Cascading effect for multiple ProfileCards */
+  .profile-card + .profile-card {
+    border-color: #007BFF;
+  }
+  

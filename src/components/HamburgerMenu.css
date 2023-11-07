@@ -1,0 +1,56 @@
+/* HamburgerMenu.css */
+
+.hamburger-menu {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+  }
+  
+  .hamburger-menu .bar {
+    width: 30px;
+    height: 4px;
+    background-color: #000; /* Adjust the color as needed */
+    transition: 0.4s;
+  }
+  
+  .hamburger-menu.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 5px);
+  }
+  
+  .hamburger-menu.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-menu.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+ /* HamburgerMenu.css */
+
+/* Existing styles for .hamburger-menu and .bar */
+
+ .menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    margin-top: 10px; /* Add spacing between bars and menu items */
+  }
+  
+   .menu-items a {
+    color: #c5b6b6; /* Adjust the color as needed */
+    text-decoration: none;
+    margin: 5px; /* Add spacing between menu items */
+    font-size: 50px; /* Adjust the font size */
+    font-weight: bold; /* Add font-weight for emphasis */
+    transition: color 0.3s;
+    background-color: #000;
+    width: 300px; /* Add a color transition for hover effect */
+  
+    /* Style for when hovering over menu items */
+    &:hover {
+      color: #0ed25c; /* Adjust the hover color as needed */
+    }
+  }
+  
